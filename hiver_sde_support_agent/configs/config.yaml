@@ -1,0 +1,28 @@
+brand:
+  name: AppleSupport
+  company_author_id: AppleSupport
+paths:
+  raw_csv: data/raw/twcs/twcs.csv
+  pairs_csv: data/processed/apple_support_pairs.csv
+  train_labels: data/processed/train_labels.csv
+  model: data/processed/intent_model.joblib
+  golden: data/golden/golden_to_label.csv
+  retrieval_index: data/processed/retrieval_index.joblib
+  predictions: reports/predictions.csv
+model:
+  min_train_per_intent: 5
+  confidence_threshold: 0.62
+  retrieval_top_k: 5
+routing:
+  high_risk_patterns:
+    - "account\s+(was\s+)?hacked"
+    - "account stolen"
+    - "someone accessed my account"
+    - "unauthorized charge"
+    - "identity theft"
+    - "lawsuit"
+    - "legal action"
+    - "emergency"
+    - "dangerous"
+    - "unsafe"
+    - "fraud"

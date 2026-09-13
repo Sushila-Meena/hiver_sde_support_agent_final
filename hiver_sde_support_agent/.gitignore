@@ -1,0 +1,9 @@
+data/raw/*
+data/processed/*.joblib
+data/processed/*.csv
+data/golden/golden_to_label.csv
+data/golden/judge_calibration.csv
+.env
+__pycache__/
+.pytest_cache/
+*.pyc

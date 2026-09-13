@@ -1,0 +1,12 @@
+# Starter taxonomy. Revise after inspecting intent_clusters.csv.
+intents:
+  account_login_access: "Apple ID, login, password, account access or verification"
+  device_hardware_issue: "device hardware, battery, screen, damage or physical malfunction"
+  ios_update_or_software_issue: "iOS/macOS update, installation, crash or system software"
+  app_or_feature_not_working: "Apple app or device feature not working"
+  billing_payment_purchase: "purchase, billing, charge, payment or refund"
+  subscription_service: "subscriptions, iCloud or recurring service"
+  order_repair_or_shipping: "order, repair, replacement or shipping"
+  connectivity_network: "Wi-Fi, cellular, Bluetooth or network connectivity"
+  privacy_security: "privacy, security or suspicious access"
+  unknown_other: "does not fit another supported intent"
